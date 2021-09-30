@@ -1,0 +1,514 @@
+    *,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+header{
+    height: 370px;
+    background-image: url(./images/Capture.JPG);
+}
+h1{
+    text-align: center;
+    color: wheat;
+    font-size: 90px;
+    font-family: Neuton;
+    padding: 70px;
+    font-weight: 700;
+}
+h1 span {opacity:0;}
+.letter01 {animation:letters 4s ease 0000ms forwards;}
+.letter02 {animation:letters 4s ease 0500ms forwards;}
+.letter03 {animation:letters 4s ease 1000ms forwards;}
+.letter04 {animation:letters 4s ease 1500ms forwards;}
+.letter05 {animation:letters 4s ease 2000ms forwards;}
+.letter06 {animation:letters 4s ease 2500ms forwards;}
+/* .letter07 {animation:letters 3s ease 3000ms forwards;} */
+/* .letter08 {} */
+.letter09 {animation:letters 4s ease 4500ms forwards;}
+.letter10 {animation:letters 4s ease 5000ms forwards;}
+.letter11 {animation:letters 4s ease 5500ms forwards;}
+.letter12 {animation:letters 4s ease 6000ms forwards;}
+@keyframes letters {
+	0% {opacity:0;}
+	100% {opacity:1.0;}
+}
+
+/* ......................animation h1 fini..................... */
+.btn-primary{
+    margin-left: 10px;
+}
+.btn-primary{
+    background-color: wheat;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(145, 31, 120);
+    border-radius: 20px;
+    padding: 8px;
+    margin-left: 10pxs;
+}
+#offcanvasRightLabel{
+    font-size: 25px;
+    color: rgb(145, 31, 120);
+}
+a{
+    font-size: 20px;
+    color:rgb(145, 31, 120)
+}
+.text-citation{
+    padding: 30px;
+    font-weight: 400;
+    font-size: 70px;
+    color: rgb(153, 45, 129);
+    /* font-style: italic; */
+    font-family: Stalemate;
+    /* background-image: url(./images/cita-m\ m.png); */
+}
+.vie-rose{
+    font-size: 40px;
+    font-weight: 300;
+}
+#micro{
+    border-radius: 50%;    
+    border: rgb(153, 45, 129) 1px solid;
+}
+
+/* ...........................css header................................ */
+.navbar{
+  color: white;
+} 
+.navbar-nav{
+    /* background-color: rgb(245, 186, 213); */
+    border-radius: 10px;
+    font-size: 20px;  
+    padding: 10px;
+}
+.nav-link{
+    border: solid 5px wheat;
+    border-radius: 50px;
+    background-color: rgb(145, 31, 120);
+    padding: 10px;
+    margin: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic; 
+    
+}
+.nav-item .nav-link{
+    color: white;
+}
+.nav-item:hover a{
+    border: solid 3PX rgb(145, 31, 120);
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.navbar-brand{
+    color: rgb(145, 31, 120);
+}
+.navbar-toggler{
+    color: rgb(145, 31, 120);
+}
+.navbar-toggler-icon{
+    border: solid 2px rgb(145, 31, 120);
+    background-color: rgb(153, 45, 129);
+}
+/* ................................biographie.................. */
+#biographie{
+    padding: 30px;   
+    margin-top: 50px;
+}
+#img-biographie{
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}
+#texte-biographie{
+    /* text-align: center; */
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    align: right
+}
+
+/* .....................css biographie............................. */
+#biographie{
+    height: 700px;
+    padding: 20px;   
+    margin-top: 50px;
+    background-image: url(./images/ROSA-ROSA-VB.png);
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    border-radius: 20px;
+}
+/* #image-biographie{
+    padding: 20px;
+
+}
+#img-biographie{
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+} */
+#texte-biographie{
+    /* text-align: center; */
+    font-size: 25px;
+    color: black;
+    /* font-style: italic; */
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    background-color: rgba(188, 143, 143, 0.5);;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+.developpeur{
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 20px;
+    font-style: italic;
+}
+.rosa{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/* .........................accordeon css......................... */
+
+#accordionFlushExample{
+    background-color: wheat;
+    height: 400px;
+    margin-bottom: 60px;
+}
+.accordion-button{
+   font-size: 20px;
+   color: rgb(145, 31, 120);
+   font-weight: 600;
+   padding: 20px;
+   text-decoration: underline;
+}
+.accordeon{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.658);
+    padding: 10px;
+}
+.accordion-body{
+    font-size: 20px;
+    color: rgb(70, 15, 58);
+
+}
+
+
+/* .........................css.....diplomes................... */
+
+.qui-suis{
+    /* height: 600px; */
+    background-color: rgba(255, 255, 255, 0.952);
+    margin-top: 120px;
+}
+.card{
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px;
+    border: solid 1px rgb(161, 83, 144);
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+h4{
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    text-decoration: underline;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.596);
+}
+li{
+    font-weight: 400;
+    font-size: 20px;
+}
+.card-text{
+    font-weight: 600;
+    color: rgb(145, 31, 120);
+    font-size: 25px;
+    padding: 10px;
+}
+.dip{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgb(145, 31, 120);
+}
+
+
+
+
+/* .....................articles......................... */
+/* .card1{
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px;
+    border: solid 1px rgb(161, 83, 144);
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+.card-body{
+    width: 90%;
+    height: auto;
+} */
+
+.articles{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    padding: 1px;
+    border-radius: 20px;
+    background-color: rgb(243, 174, 186);
+}
+#formatis{
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    /* border: solid 1px rgb(145, 31, 120); */
+}
+p{
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* ..............................CONTACTEZ MOI............... */
+.c-moi{
+    /* text-align: center; */
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 30px;
+    color: rgb(145, 31, 120);
+    /* background-color: rgba(245, 222, 179, 0.637); */  
+}
+.div-tel{
+    background-color: rgba(245, 222, 179, 0.671);
+    font-weight: 500;
+    font-size: 20px;
+    height: 130px;
+    text-align: center;
+    border-bottom: solid 30px rgb(145, 31, 120);
+    display: inline-block;
+    margin: 50px;
+    color: rgb(145, 31, 120);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 50PX 50PX 100px  rgba(107, 13, 69, 0.5);
+    /* transform: translateY(100px);
+    opacity: 3;
+    transition: 0.8s; */
+} 
+#contact{
+    background-image: url(./images/ecrire-M.png);
+    border-radius: 10px;
+    /* border: solid 2px rgb(145, 31, 120); */
+}
+a{
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+
+
+/* ............................CSS RESEAUX...................... */
+
+#menu-reseau{
+    background-color: white;
+    padding: 5px;
+    margin-left: 60px;
+}
+#btn-social{
+    border-radius: 50%;
+    margin: 30px;    
+}
+.copy-right{
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+}
+
+/* ...............................css footer................. */
+footer{
+    background-image: url(./images/back-tourné-mm.png);
+    height: 350px; 
+    width: 100%;
+    overflow-x: hidden;
+}
+#loisirs{
+    padding: 20px;
+    margin-top: 200px;
+}
+
+
+
+
+
+/* .................................................... */
+@media (max-width:780px){
+    header{
+        height: 350px;
+    }
+    h1{
+        font-size: 40px;
+        padding: 90px;
+    }
+    .text-citation{
+        padding: 30px;
+        font-weight: 400;
+        font-size: 40px;
+        color: rgb(153, 45, 129);
+        font-family: Stalemate;
+    }
+    .div-tel{
+        margin:20px;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 10px;
+        height: 100px;
+        text-align: center;
+        border-bottom: solid 30px wheat;
+        /* border-radius: 20px; */
+        display: inline-block;
+      
+        /* margin: 50px; */
+    }
+    a{
+        font-size: 20px;
+    } 
+    .navbar-nav{
+        font-size: 20px;  
+        padding: 10px;
+    }
+    .nav-link{
+        background-color: rgb(145, 31, 120);
+        padding: 5px;
+        margin: 10px;
+    }
+    H2{
+        padding: 3px;
+    }
+    footer{
+        height: 200px;
+
+    }
+    .btn-primary{
+        background-color: wheat;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(145, 31, 120);
+        border-radius: 20px;
+        padding: 5px;
+        margin-left: 10pxs;
+    }
+    h4{
+        text-align: center;
+        font-size: 30px;
+    }
+    
+  #biographie{
+    height: 500px;
+    padding: 10px;   
+    margin-top: 50px;
+}
+#texte-biographie{
+    /* text-align: center; */
+    font-size: 15px;
+    color: black;
+    /* font-style: italic; */
+    padding: 10px;
+    border-radius: 20px;
+}
+.developpeur{
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 10px;
+    font-style: italic;
+}
+.rosa{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+}
+@media (max-width:500px){
+    header{
+        height: 350px;
+    }
+    h1{
+        font-size: 30px;
+        padding: 90px;
+    }
+    .text-citation{
+        padding: 30px;
+        font-weight: 400;
+        font-size: 30px;
+        color: rgb(153, 45, 129);
+    }
+    .div-tel{
+        font-weight: 500;
+        font-size: 15px;
+        padding: 3px;
+        height: 80px;
+        text-align: center;
+        border-bottom: solid 30px wheat;
+        /* border-radius: 20px; */
+        /* display: inline-block; */
+        /* margin: 50px; */
+    }
+    a{
+        font-size: 15px;
+    }
+    
+    footer{
+        height: 150px;
+    }   
+    #biographie{
+        height: 600px;
+        padding: 10px;   
+        margin-top: 50px;
+    }
+    #texte-biographie{
+        /* text-align: center; */
+        font-size: 15px;
+        color: black;
+        /* font-style: italic; */
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .developpeur{
+        color: rgba(0, 0, 0, 0.637);
+        font-size: 10px;
+        font-style: italic;
+    }
+    .rosa{
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    
+}
