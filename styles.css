@@ -348,7 +348,7 @@ a{
     margin: 40px;    
 }
 .copy-right{
-    color: rgb(247, 240, 240);
+    color: rgb(145, 31, 120);
     font-size: 15px;
     text-align: center;
     padding: 5px;
@@ -387,24 +387,32 @@ footer{
   } */
 /* ....................css passes-temps....................... */
 #section-hobbies{
-    background-color: rosybrown;
+    border-radius: 20px;
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.842);
 
 }
 #loisirs{
-    padding: 30px;
-    margin-top: 100px;
+  padding: 10px;
+  border: solid 1px rgb(145, 31, 120);
+  border-radius: 100px;
 }
 .hobbies{
-    margin-bottom: 200px;
-    font-size: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 60px;
     font-family: Stalemate;
     font-weight: 500;
     text-align: center;
-    color: wheat;
+    color: rgb(145, 31, 120);
 }
 
 .deco{
+    margin: 50px;
     border-radius: 50%;
+    width: 100%;
+    height: auto;
+    margin-left: 150px;
 }
 
 
