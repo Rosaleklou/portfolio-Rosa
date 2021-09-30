@@ -8,10 +8,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
+body{
+    overflow-x: hidden;
+}
 
 header{
     height: 370px;
-    background-image: url(./images/Capture.JPG);
+    background-image: url(./images/backround\ corrigé.png);
 }
 h1{
     text-align: center;
@@ -290,11 +293,6 @@ p{
 }
 
 
-
-
-
-
-
 /* ..............................CONTACTEZ MOI............... */
 .c-moi{
     /* text-align: center; */
@@ -339,16 +337,18 @@ a{
 /* ............................CSS RESEAUX...................... */
 
 #menu-reseau{
-    background-color: white;
+    margin-top: 60px;
     padding: 5px;
-    margin-left: 60px;
+    /* margin-left: 60px; */
+    /* background-color: rgb(247, 240, 240); */
+    /* border: solid 2px rgb(153, 45, 129); */
 }
 #btn-social{
     border-radius: 50%;
-    margin: 30px;    
+    margin: 40px;    
 }
 .copy-right{
-    color: black;
+    color: rgb(247, 240, 240);
     font-size: 15px;
     text-align: center;
     padding: 5px;
@@ -356,14 +356,55 @@ a{
 
 /* ...............................css footer................. */
 footer{
-    background-image: url(./images/back-tourné-mm.png);
-    height: 350px; 
-    width: 100%;
-    overflow-x: hidden;
+    padding: 50px;
+    background-image: url(./images/correction\ rosa\ retournée.png);
+    height: 280px; 
+}
+/* .wave {
+    background: url(./images/correction\ rosa\ retournée.png); 
+    position: absolute;
+    width: 6500px; 
+    height: 150px;
+    animation: wave 3s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-25px,0);
+    }
+    50% {
+      transform: translate3d(0,5px,0);
+    }
+  } */
+/* ....................css passes-temps....................... */
+#section-hobbies{
+    background-color: rosybrown;
+
 }
 #loisirs{
-    padding: 20px;
-    margin-top: 200px;
+    padding: 30px;
+    margin-top: 100px;
+}
+.hobbies{
+    margin-bottom: 200px;
+    font-size: 40px;
+    font-family: Stalemate;
+    font-weight: 500;
+    text-align: center;
+    color: wheat;
+}
+
+.deco{
+    border-radius: 50%;
 }
 
 
@@ -510,5 +551,4 @@ footer{
         font-size: 20px;
         text-decoration: underline;
     }
-    
 }
