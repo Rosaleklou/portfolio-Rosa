@@ -136,6 +136,18 @@ a{
     font-family: 'Courier New', Courier, monospace;
     align: right
 }
+#bienvennu{
+    font-size: 30ps;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.623);
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.bienvennu{
+    font-size: 20px;
+}
 
 /* .....................css biographie............................. */
 #biographie{
@@ -191,9 +203,12 @@ a{
 /* .........................accordeon css......................... */
 
 #accordionFlushExample{
-    background-color: wheat;
+    background-color: rgb(155, 77, 138);
+    border: rgb(145, 31, 120) solid 2px;
     height: 400px;
     margin-bottom: 60px;
+    margin-top: 220px;
+    border-radius: 20px;
 }
 .accordion-button{
    font-size: 20px;
@@ -389,24 +404,24 @@ footer{
 #section-hobbies{
     border-radius: 20px;
     margin-top: 100px;
+    margin-bottom: 100px;
     background-color: rgba(255, 255, 255, 0.842);
 
 }
 #loisirs{
   padding: 10px;
   border: solid 1px rgb(145, 31, 120);
-  border-radius: 100px;
+  border-radius: 30px;
 }
 .hobbies{
     padding: 10px;
-    margin-bottom: 20px;
+    
     font-size: 60px;
     font-family: Stalemate;
     font-weight: 500;
     text-align: center;
     color: rgb(145, 31, 120);
 }
-
 .deco{
     margin: 50px;
     border-radius: 50%;
