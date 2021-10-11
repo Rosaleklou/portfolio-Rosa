@@ -21,7 +21,7 @@ h1{
     color: wheat;
     font-size: 90px;
     font-family: Neuton;
-    padding: 70px;
+    padding: 50px;
     font-weight: 700;
 }
 h1 span {opacity:0;}
@@ -54,6 +54,7 @@ h1 span {opacity:0;}
     border-radius: 20px;
     padding: 8px;
     margin-left: 10pxs;
+    margin-top: 1px;
 }
 #offcanvasRightLabel{
     font-size: 25px;
@@ -101,6 +102,16 @@ a{
     font-style: italic; 
     
 }
+.navbar-brand-contact{
+    border: solid 5px wheat;
+    border-radius: 50px;
+    background-color: rgb(145, 31, 120);
+    padding: 10px;
+    margin: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic; 
+    color: white;
+}
 .nav-item .nav-link{
     color: white;
 }
@@ -109,8 +120,10 @@ a{
     background-color: rgb(255, 255, 255);
     color: black;
 }
-.navbar-brand{
-    color: rgb(145, 31, 120);
+.navbar-brand-contact:hover {
+    border: solid 3PX rgb(145, 31, 120);
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 .navbar-toggler{
     color: rgb(145, 31, 120);
@@ -122,12 +135,16 @@ a{
 /* ................................biographie.................. */
 #biographie{
     padding: 30px;   
-    margin-top: 50px;
+    margin-top: 100px;
 }
 #img-biographie{
     border-radius: 50%;
     width: 100%;
     height: auto;
+}
+#div-biographie{
+    height: 100%;
+    width: 100%;
 }
 #texte-biographie{
     /* text-align: center; */
@@ -137,7 +154,7 @@ a{
     align: right
 }
 #bienvennu{
-    font-size: 30ps;
+    font-size: 30px;
     text-align: center;
     color: rgba(0, 0, 0, 0.623);
     margin-bottom: 50px;
@@ -146,7 +163,7 @@ a{
     font-style: italic;
 }
 .bienvennu{
-    font-size: 20px;
+    font-size: 19px;
 }
 
 /* .....................css biographie............................. */
@@ -205,7 +222,7 @@ a{
 #accordionFlushExample{
     background-color: rgb(155, 77, 138);
     border: rgb(145, 31, 120) solid 2px;
-    height: 400px;
+    height: 500px;
     margin-bottom: 60px;
     margin-top: 220px;
     border-radius: 20px;
@@ -214,20 +231,19 @@ a{
    font-size: 20px;
    color: rgb(145, 31, 120);
    font-weight: 600;
-   padding: 20px;
+   padding: 30px;
    text-decoration: underline;
 }
 .accordeon{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 30px;
-    color: rgba(0, 0, 0, 0.658);
-    padding: 10px;
+    color: wheat;
+    padding: 10px;  
 }
 .accordion-body{
     font-size: 20px;
     color: rgb(70, 15, 58);
-
 }
 
 
@@ -450,6 +466,33 @@ footer{
         color: rgb(153, 45, 129);
         font-family: Stalemate;
     }
+    #bienvennu{
+        font-size: 19px;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .bienvennu{
+        font-size: 16px;
+    }
+    
+    #texte-biographie{
+        /* text-align: center; */
+        font-size: 15px;
+        width: 100%;
+        height: auto;
+    }
+    #div-biographie{
+        height: 100%;
+        width: 100%;
+    }
+    #biographie{
+        padding: 10px;   
+        margin-top: 30px;
+        background-color: blanchedalmond ;
+        background-image: none;
+        margin-bottom: 30px;
+    }
     .div-tel{
         margin:20px;
         font-weight: 500;
@@ -518,6 +561,55 @@ footer{
     font-size: 20px;
     text-decoration: underline;
 }
+.articles{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    /* padding: 10px; */
+}
+#formatis{
+    /* padding: 5px; */
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+#formationss{
+    /* padding: 5px; */
+    /* margin: 5px; */
+}
+p{
+    font-weight: 600;
+    text-align: center;
+}
+#loisirs{
+    padding: 5px;
+   
+  }
+  .deco{
+    margin: 50px;
+    border-radius: 50%;
+    width: 90%;
+    height: auto;
+}
+.hobbies{
+    font-size: 30px;
+}
+#menu-reseau{
+    margin-top: 70px;
+    padding: 20px;
+}
+#btn-social{
+    border-radius: 50%;
+    margin-top: 20px;    
+}
+.copy-right{
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 50px;
+}
+footer{
+    padding: 30px;
+    height: 220px; 
+}
 
 }
 @media (max-width:500px){
@@ -533,6 +625,20 @@ footer{
         font-weight: 400;
         font-size: 30px;
         color: rgb(153, 45, 129);
+    }
+    #bienvennu{
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .bienvennu{
+        font-size: 10px;
+    }
+    
+    #texte-biographie{
+        /* text-align: center; */
+        font-size: 10px;
     }
     .div-tel{
         font-weight: 500;
@@ -573,5 +679,33 @@ footer{
     .rosa{
         font-size: 20px;
         text-decoration: underline;
+    }
+    .deco{
+        margin: 50px;
+        border-radius: 50%;
+        width: 100%;
+        height: auto;
+        margin: 20px;
+    }
+    .hobbies{
+        font-size: 20px;
+    }
+    #menu-reseau{
+        margin-top: 40px;
+        /* padding: 60px; */
+    }
+    #btn-social{
+        border-radius: 50%;
+        margin-top: 70px;  
+        padding: 10px; 
+    }
+    .copy-right{
+        font-size: 10px;
+        padding: 1px;
+        margin: 20px;
+    }
+    footer{
+        padding: 10px;
+        height: 200px; 
     }
 }

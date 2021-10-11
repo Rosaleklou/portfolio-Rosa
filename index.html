@@ -18,8 +18,31 @@
         <link rel="stylesheet" href="./bootstrap.css">
         <link rel="stylesheet" href="styles.css">
     </head>
+    
     <body>
         <header>  
+            <script type="text/javascript"> 
+                function refresh(){
+                    var t = 1000; // rafraîchissement en millisecondes
+                    setTimeout('showDate()',t)
+                }
+                
+                function showDate() {
+                    var date = new Date()
+                    var h = date.getHours();
+                    var m = date.getMinutes();
+                    var s = date.getSeconds();
+                    if( h < 10 ){ h = '0' + h; }
+                    if( m < 10 ){ m = '0' + m; }
+                    if( s < 10 ){ s = '0' + s; }
+                    var time = h + ':' + m + ':' + s
+                    document.getElementById('horloge').innerHTML = time;
+                    refresh();
+                 }
+             </script>
+          </head>
+          <body onload=showDate();>
+             <span id='horloge' style="color: wheat; font-size:30px;  font-weight: 600; font-family: 'Times New Roman', Times, serif; margin: 15px; padding: 3px;"></span>
             <!-- <h1 id="typed">METTEF  Rosa</h1>  -->
             <div id="wrapper">
                 <h1><span class="letter01">M</span><span class="letter02">E</span><span class="letter03">T</span><span class="letter04">T</span><span class="letter05">E</span><span class="letter06">F</span><span class="letter07"></span><span class="letter08">&nbsp;</span><span class="letter09">R</span><span class="letter10">o</span><span class="letter11">s</span><span class="letter12">a</span></h1>
@@ -38,16 +61,18 @@
                 </svg> </a>
             </div>   
         </header>
+  <!-- ..............................phra d'accroche......................... -->
+  
         <p class="text-citation">♥ Le succés est crée par des gens ordinaires ayant une determination  extraordinaire ♥ <br> <span>..........</span>
              <!-- <span class="vie-rose">Ma vie en Rose-A- <br> .....</span> -->
              <img id="micro" src="./images/micro-m.png" width="100px" height="100px" alt=""> <span>..........</span></p>
 
-             <h2 id="bienvennu" >Bienvennus sur mon portfolio, je vous souhaite bonne visite! <br><span class="bienvennu">N'hesitez pas à m'envoyer vos retour vos remarques et suggestions! </span></h2>
+             <h2 class="container" id="bienvennu" >Bienvennus sur mon portfolio, je vous souhaite bonne visite! <br><span class="bienvennu">N'hesitez pas à m'envoyer vos retours remarques et suggestions! Ah j'ai oublié de vous dire que je suis à la recherche d'un stage, si vous pouvez m'aider à satisfaire ma curiosité concernant votre metier et me donner l'occasion d'en savoir un plus sur le domaine du developpement web faites moi signe j'en serais trés ravie.</span> </h2>
 
 <!-- ................................navbar.............................. -->
         <nav class="navbar navbar-expand-lg navbar">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#contact">Contact</a>
+            <a class="navbar-brand-contact" href="#contact">Contact</a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,7 +80,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#biographie"">Qui suis-je ?</a>
+                    <a class="nav-link active" aria-current="page" href="#biographie">Qui suis-je ?</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#formationss">Mes diplômes</a>
@@ -78,15 +103,11 @@
 <!-- ..................................html nav fini................................... -->
 <!-- ............................... html biographie............... -->
 <section id="biographie" class="container">
-    <div class="row">
         <div id="div-biographie" class="col-10">
             <p id="texte-biographie"> <span class="rosa">Qui est Rosa? <br> </span> <br>  Originaire de Kabylie, elle arrive en France en poursuivant avec acharnement son plus grand rêve qui est: Faire de la Radio. 
                 Son dynamisme et sa joie de vivre ont fait d'elle l'une des animatrices les plus appréciées par le grand public de sa communauté . <br>
                 Avec ses plusieurs années dans le domaine de la communication elle a su élargir son réseau, acquérir de l'expérience et les différentes méthodes de communication.
                 Elle maitrise autant les stratégies commerciales qu'elle a exercé lors de ses activités profesionnelles, et les outils de la communisation et des relations humaines. <br> Aujourdhui dans le cadre d'une reconversion profesionnelle, elle decouvre avec passion le domaine du developpement web  qui la passionne énormement <br> <br> <span class="developpeur"> "La passion du domaine du Dev vient de sa complexité qui le rend trés interessant, avec ces quelques semaines que j'ai passé à decouvrir ce metier, j'ai pu comprendre et partager l'amour des developpeurs pour leurs passions, coder c'est rentrer dans une bulle ou la seule frontiére est l'imagination. Un language qui fait ressortir de belles notes des baguettes des developeurs pour faire valser leurs imagination et surprendre leurs clients en leurs offrant toujours leurs empreintes qui les distinguent les uns des autres"</span></p>
-        </div>
-        <div id="image-biographie" class="col-2">
-            <!-- <img id="img-biographie" src="./images/micro-m.png" alt=""> -->
         </div>
     </div>
 </section>
@@ -228,18 +249,18 @@
         <SECtion class="container articles"> 
             <div id="formationss" class="row">
                 <h5 id="formatis">Articles de presse</h5> 
-                <div id="troiS" class="col-10 col-md-3 card">
+                <div id="troiS" class="col-8 col-md-3 card">
                     <img id="form-dip" src="./images/article1.png" class="card-article" alt="...">
                     <div class="card-body"><p>Le progrés de l'Ain -2014-</p>
                     </div>
                 </div>
-                <div id="un" class="col-10 col-md-3 card">
+                <div id="un" class="col-8 col-md-3 card">
                     <img src="./images/article-2.png" class="card-article" alt="...">
                     <div class="card-body">
                         <p>Voix l'Ain -2014-</p>
                     </div>
                 </div>
-                <div id="deux" class="col-10 col-md-3 card">
+                <div id="deux" class="col-8 col-md-3 card">
                     <img  src="./images/article3.png" class="card-article" alt="...">
                     <div class="card-body"><p>Le progrés de l'Ain -2018-</p>
                 </div>
@@ -277,9 +298,9 @@
         <section id="section-hobbies" class="container">
             <div id="loisirs" class="row">
                 <h2 class="hobbies">Mes passes-temps et Hobbies en images. on y va ? </h2>
-                <div class="col-3"> <img class="deco" src="./images/deco/voyager.jpg" alt=""></div>
-                <div class="col-3"> <img class="deco" src="./images/deco/cinema.png" alt=""></div>
-                <div class="col-3"> <img class="deco" src="./images/deco/ecouter la mus.jpg" alt=""></div>
+                <div class="col-10 col-md-3"> <img class="deco" src="./images/deco/voyager.jpg" alt=""></div>
+                <div class="col-10 col-md-3"> <img class="deco" src="./images/deco/cinema.png" alt=""></div>
+                <div class="col-10 col-md-3"> <img class="deco" src="./images/deco/ecouter la mus.jpg" alt=""></div>
                 
 
                 <!-- <div class="col-md-3"> <img class="deco" src="./images/deco/verrine.png" alt="" height="100px" width="100px"></div>
@@ -302,28 +323,28 @@
         
     <footer>  
         <div id="menu-reseau" class="row container">
-            <div class="reseau col-1">
-                <a class="navbar-brand" href="https://fr-fr.facebook.com/login/?cuid=AYj61fCS44C__EICmQ-YPZhP2aSTrYG59ydeXHBRV_s-d-20O6ZSystsIqWe-v2Y8nFOemMQ5BeUP5gCwEH4hA5LuglNSJd0kCKyjwKFprylhA&next&privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjMyNjgzNDQ5LCJjYWxsc2l0ZV9pZCI6MzQzNjE1NzkwMjAxNjQ0fQ%3D%3D">
+            <div class="reseau col-2 col-md-1">
+                <a class="navbar-brand" href="https://fr-fr.facebook.com/login/?cuid=AYj61fCS44C__EICmQ-YPZhP2aSTrYG59ydeXHBRV_s-d-20O6ZSystsIqWe-v2Y8nFOemMQ5BeUP5gCwEH4hA5LuglNSJd0kCKyjwKFprylhA&next&privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjMyNjgzNDQ5LCJjYWxsc2l0ZV9pZCI6MzQzNjE1NzkwMjAxNjQ0fQ%3D%3D" target="blank">
                     <img id="btn-social" src="./images/reseau/faceb.png" alt="" width="40px" height="40px">
                 </a>
             </div>
-            <div class="reseau col-1">
-                <a class="navbar-brand" href="https://www.linkedin.com/in/rosa-leklou-61841921b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BiClBuFDEQgymMsyAuvc4Ig%3D%3D">
+            <div class="reseau col-2 col-md-1">
+                <a class="navbar-brand" href="https://www.linkedin.com/in/rosa-leklou-61841921b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BiClBuFDEQgymMsyAuvc4Ig%3D%3D" target="blank">
                     <img id="btn-social" src="./images/reseau/LINK.jfif" alt="" width="40px" height="40px">
                 </a>
             </div>
-            <div class="reseau col-1">
-                <a class="navbar-brand" href="https://www.instagram.com/rosa_radio_tv/">
+            <div class="reseau col-2 col-md-1">
+                <a class="navbar-brand" href="https://www.instagram.com/rosa_radio_tv/" target="blank">
                     <img id="btn-social" src="./images/reseau/in.jpg" alt="" width="40px" height="40px">
                 </a>
             </div>
-            <div class="reseau col-1">
-                <a class="navbar-brand" href="https://github.com/">
+            <div class="reseau col-2 col-md-1">
+                <a class="navbar-brand" href="https://github.com/" target="blank">
                     <img id="btn-social" src="./images/reseau/gg.png" alt="" width="40px" height="40px">
                 </a>
             </div>
-            <div class="reseau col-2">
-                <a class="navbar-brand" href="https://www.youtube.com/channel/UCuUganaerOkpj6ZVmzFpdSw">
+            <div class="reseau col-2 col-md-1">
+                <a class="navbar-brand" href="https://www.youtube.com/channel/UCuUganaerOkpj6ZVmzFpdSw" target="blank">
                     <img id="btn-social" src="./images/reseau/f.png" alt="" width="40px" height="40px">
                 </a>
             </div>
