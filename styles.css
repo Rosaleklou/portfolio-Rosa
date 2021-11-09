@@ -7,7 +7,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rampart+One&display=swap');
 body{
     overflow-x: hidden;
 }
@@ -20,7 +20,7 @@ h1{
     text-align: center;
     color: wheat;
     font-size: 90px;
-    font-family: Neuton;
+    font-family: inherit;
     padding: 50px;
     font-weight: 700;
 }
@@ -51,7 +51,7 @@ h1 span {opacity:0;}
     font-size: 20px;
     font-weight: 600;
     color: rgb(145, 31, 120);
-    border-radius: 20px;
+    border-radius: 00px 20px 00px 20px;
     padding: 8px;
     margin-left: 10pxs;
     margin-top: 1px;
@@ -85,18 +85,20 @@ a{
 /* ...........................css header................................ */
 .navbar{
   color: white;
+  border-bottom: solid 1px rgb(153, 45, 129);
 } 
 .navbar-nav{
     /* background-color: rgb(245, 186, 213); */
-    border-radius: 10px;
-    font-size: 20px;  
-    padding: 10px;
+    /* border-radius: 00px 15px 00px 15px;; */
+    font-size: 15px;  
+    padding: 00px;
+   
 }
 .nav-link{
     border: solid 5px wheat;
-    border-radius: 50px;
+    border-radius: 30px 00px 30px 00px;
     background-color: rgb(145, 31, 120);
-    padding: 10px;
+    padding: 15px;
     margin: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic; 
@@ -104,7 +106,7 @@ a{
 }
 .navbar-brand-contact{
     border: solid 5px wheat;
-    border-radius: 50px;
+    border-radius: 20px 00px 20px 00px;;
     background-color: rgb(145, 31, 120);
     padding: 10px;
     margin: 30px;
@@ -135,7 +137,7 @@ a{
 /* ................................biographie.................. */
 #biographie{
     padding: 30px;   
-    margin-top: 100px;
+    margin-top: 400px;
 }
 #img-biographie{
     border-radius: 50%;
@@ -151,7 +153,6 @@ a{
     font-size: 20px;
     font-style: italic;
     font-family: 'Courier New', Courier, monospace;
-    align: right
 }
 #bienvennu{
     font-size: 30px;
@@ -174,7 +175,7 @@ a{
     background-image: url(./images/ROSA-ROSA-VB.png);
     margin-bottom: 50px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-    border-radius: 20px;
+    border-radius: 00px 50px 00px 50px;
 }
 /* #image-biographie{
     padding: 20px;
@@ -211,7 +212,7 @@ a{
 #compétences{
     margin-top: 200px;
     background-color:rgb(145, 31, 120);
-    border-radius: 10px;
+    border-radius: 00px 55px 00px 55px;
     padding: 50px;
     box-shadow: rgb(134, 50, 99) 0px 20px 30px -10px;
 }
@@ -225,8 +226,8 @@ a{
 #competences-liste{
     color: rgb(145, 31, 120);
     background-color: white;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 00px 55px 00px 55px;
+    padding: 13px;
     box-shadow: rgb(134, 50, 99) 0px 20px 30px -10px;
 }
 /* #div-competences{
@@ -246,12 +247,12 @@ a{
 /* .........................accordeon css......................... */
 
 #accordionFlushExample{
-    background-color: rgb(155, 77, 138);
+    background-color: rgb(145, 31, 120);
     border: rgb(145, 31, 120) solid 2px;
     height: 500px;
     margin-bottom: 60px;
     margin-top: 220px;
-    border-radius: 20px;
+    border-radius: 00px 50px 00px 50px;
 }
 .accordion-button{
    font-size: 20px;
@@ -266,6 +267,7 @@ a{
     font-size: 30px;
     color: wheat;
     padding: 10px;  
+    border-radius: 00px 50px 00px 50px;
 }
 .accordion-body{
     font-size: 20px;
@@ -279,9 +281,11 @@ a{
     /* height: 600px; */
     background-color: rgba(255, 255, 255, 0.952);
     margin-top: 120px;
+    border: solid 2px rgb(134, 50, 99);
+    border-radius: 00px 100px 00px 100px;
 }
 .card{
-    border-radius: 10px;
+    border-radius: 00px 50px 00px 50px;
     padding: 20px;
     margin: 50px;
     border: solid 1px rgb(161, 83, 144);
@@ -291,9 +295,9 @@ h4{
     text-align: center;
     font-size: 40px;
     font-style: italic;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     padding: 20px;
-    color: rgba(0, 0, 0, 0.596);
+    color: rgb(153, 45, 129);
 }
 li{
     font-weight: 400;
@@ -333,8 +337,11 @@ li{
     margin-bottom: 100px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     padding: 1px;
-    border-radius: 20px;
-    background-color: rgb(243, 174, 186);
+    border-radius: 00px 50px 00px 50px;
+    background-color: rgb(139, 62, 107);
+    /* background-color: rgb(243, 174, 186); */
+    border-radius: 00px 100px 00px 100px;
+    border: rgb(134, 50, 99) solid 2px;
 }
 #formatis{
     padding: 20px;
@@ -342,7 +349,11 @@ li{
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
+    color: wheat;
     /* border: solid 1px rgb(145, 31, 120); */
+}
+.card-article{
+    border-radius: 00px 20px 00px 20px;
 }
 p{
     font-weight: 600;
@@ -359,7 +370,9 @@ p{
     text-decoration: underline;
     padding: 30px;
     color: rgb(145, 31, 120);
-    /* background-color: rgba(245, 222, 179, 0.637); */  
+    box-shadow: rgb(134, 50, 99) 0px 20px 30px -10px;
+    background-color: rgba(245, 222, 179, 0.637);  
+    border-radius: 00px 80px 00px 80px;
 }
 .div-tel{
     background-color: rgba(245, 222, 179, 0.671);
@@ -380,7 +393,8 @@ p{
 } 
 #contact{
     background-image: url(./images/ecrire-M.png);
-    border-radius: 10px;
+    border-radius: 00px 100px 00px 100px;
+    box-shadow: rgb(134, 50, 99) 0px 20px 30px -10px;
     /* border: solid 2px rgb(145, 31, 120); */
 }
 a{
@@ -444,7 +458,7 @@ footer{
   } */
 /* ....................css passes-temps....................... */
 #section-hobbies{
-    border-radius: 20px;
+    border-radius: 00px 100px 00px 100px;
     margin-top: 100px;
     margin-bottom: 100px;
     background-color: rgba(255, 255, 255, 0.842);
@@ -453,7 +467,8 @@ footer{
 #loisirs{
   padding: 10px;
   border: solid 1px rgb(145, 31, 120);
-  border-radius: 30px;
+  border-radius: 00px 100px 00px 100px;
+  box-shadow: rgb(134, 50, 99) 0px 20px 30px -10px;
 }
 .hobbies{
     padding: 10px;
